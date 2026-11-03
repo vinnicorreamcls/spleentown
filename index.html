@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#121012" />
+    <meta name="description" content="Spleen Town — an after-dark menu of eight authorial cocktails." />
+    <title>Spleen Town — After dark</title>
+    <link rel="stylesheet" href="./styles.css?v=20261014-access-keyhole-v9" />
+  </head>
+  <body>
+    <div id="top" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="wordmark" href="#top" aria-label="Spleen Town home">
+        <span class="cat-mark" aria-hidden="true">
+          <img src="./assets/img/Vintage%20Collage%20Cat%20with%20Wilted%20Flower.png" alt="" />
+          <span class="cat-mark__eye cat-mark__eye--left"></span>
+          <span class="cat-mark__eye cat-mark__eye--right"></span>
+        </span>
+        <span class="wordmark__name">Spleen <em>Town</em><small>Noir Cocktail Bar</small></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#top">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#ambiance">Atmosphere</a>
+        <a href="#thehouse">The House</a>
+        <a href="#whats-on">What&#39;s On</a>
+        <a href="#private-events">Private Events</a>
+        <a class="nav-reserve-button" href="#reserve" aria-label="Book now">
+          <span class="button__text" aria-hidden="true">
+            <span class="button__word button__word--book"><i class="button__letter" style="--angle:-48deg;--counter:48deg">B</i><i class="button__letter" style="--angle:-16deg;--counter:16deg">O</i><i class="button__letter" style="--angle:16deg;--counter:-16deg">O</i><i class="button__letter" style="--angle:48deg;--counter:-48deg">K</i></span>
+            <span class="button__word button__word--now"><i class="button__letter" style="--angle:135deg;--counter:45deg">N</i><i class="button__letter" style="--angle:180deg;--counter:0deg">O</i><i class="button__letter" style="--angle:225deg;--counter:-45deg">W</i></span>
+          </span>
+          <span class="button__circle" aria-hidden="true"><span class="button__icon">↗</span><span class="button__icon button__icon--copy">↗</span></span>
+        </a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <video class="hero__video" autoplay muted loop playsinline preload="metadata" aria-hidden="true" data-video-src="./assets/video/spleentownnoirparty.mp4">
+        <source src="./assets/video/spleentownnoirparty.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <button class="hero-keyhole" type="button" aria-label="Open the hidden access" aria-pressed="false">
+        <svg viewBox="0 0 64 86" aria-hidden="true" focusable="false">
+          <circle class="keyhole__head" cx="32" cy="24" r="14" />
+          <path class="keyhole__stem" d="M25 34L18 78H46L39 34Z" />
+        </svg>
+      </button>
+        <div class="hero__content">
+          <p class="hero__eyebrow">Spleen Town Noir Cocktail Bar</p>
+          <h1 id="hero-title">A little <span class="hero__beautiful" aria-label="beautiful">beautifu<span class="hero__beautiful-l">l</span></span> darkness <small>in San Francisco</small>.</h1>
+          <h2 class="hero__subhead">Welcome to a Bohemian Noir Cocktail Experience in Nob Hill</h2>
+          <a class="hero__reserve" href="#reserve">Reserve a table <span aria-hidden="true">↗</span></a>
+        </div>
+    </section>
+
+    <div class="whisper-ticker" aria-label="A whispered message">
+      <div class="whisper-ticker__track"><span>SOME DOORS OPEN ONLY TO THOSE WHO KNOW WHERE TO LOOK. FOLLOW THE WHISPER, AND THE CODE MAY REVEAL ITSELF</span><span aria-hidden="true">SOME DOORS OPEN ONLY TO THOSE WHO KNOW WHERE TO LOOK. FOLLOW THE WHISPER, AND THE CODE MAY REVEAL ITSELF</span></div>
+    </div>
+
+    <div class="access-overlay" id="access-overlay" aria-hidden="true">
+      <div class="access-scene" role="dialog" aria-label="Hidden access illustration">
+        <div class="access-band">God owes the moon a drink</div>
+      </div>
+      <p class="access-hint">Move the light / press Esc to return</p>
+    </div>
+
+    <main class="experience" id="menu">
+      <section class="intro-rail" aria-labelledby="intro-title">
+        <p class="kicker">The Spleen Town index <span>↘</span></p>
+        <h1 id="intro-title">Drinks for <em>the</em> in-between.</h1>
+        <div class="scroll-note">
+          <span class="scroll-note__line" aria-hidden="true"></span>
+          <span>Scroll to wander</span>
+        </div>
+        <p class="drink-description" id="drink-description">
+          A dark, brooding twist on the classic sour, capturing existential dread, bitterness, and melancholy.
+        </p>
+        <div class="drink-copy" id="drink-copy">
+          <div class="drink-copy__heading">
+            <h2 id="drink-name">Spleen Sour</h2>
+            <p class="drink-price" id="drink-price">$22</p>
+          </div>
+        <div class="ingredients-block">
+            <div class="ingredients-block__heading"><span>Built with</span><span class="ingredients-rule"></span><span id="ingredient-count">01—06</span></div>
+            <ul class="ingredients-list" id="ingredients-list"></ul>
+          </div>
+          <div class="drink-copy__footnote"><span class="footnote-dot"></span><span id="drink-footnote">Black as the hour before sunrise.</span></div>
+        </div>
+      </section>
+
+      <section class="viewer" aria-label="Interactive cocktail menu">
+        <div class="drink-stage" id="drink-stage">
+          <div class="stage-aura" aria-hidden="true"></div>
+          <div class="stage-ring stage-ring--outer" aria-hidden="true"></div>
+          <div class="stage-ring stage-ring--inner" aria-hidden="true"></div>
+          <div class="stage-crosshair stage-crosshair--x" aria-hidden="true"></div>
+          <div class="stage-crosshair stage-crosshair--y" aria-hidden="true"></div>
+
+          <div class="callout callout--one">
+            <span class="callout__line" aria-hidden="true"></span>
+            <span class="callout__dot" aria-hidden="true"></span>
+            <span class="callout__text" id="callout-one">Rye / charcoal</span>
+          </div>
+          <div class="callout callout--two">
+            <span class="callout__line" aria-hidden="true"></span>
+            <span class="callout__dot" aria-hidden="true"></span>
+            <span class="callout__text" id="callout-two">Bitter / herbal</span>
+          </div>
+          <div class="callout callout--three">
+            <span class="callout__line" aria-hidden="true"></span>
+            <span class="callout__dot" aria-hidden="true"></span>
+            <span class="callout__text" id="callout-three">Fresh lemon</span>
+          </div>
+          <div class="callout callout--four" hidden>
+            <span class="callout__line" aria-hidden="true"></span>
+            <span class="callout__dot" aria-hidden="true"></span>
+            <span class="callout__text" id="callout-four"></span>
+          </div>
+          <div class="callout callout--five" hidden>
+            <span class="callout__line" aria-hidden="true"></span>
+            <span class="callout__dot" aria-hidden="true"></span>
+            <span class="callout__text" id="callout-five"></span>
+          </div>
+          <div class="callout callout--six" hidden>
+            <span class="callout__line" aria-hidden="true"></span>
+            <span class="callout__dot" aria-hidden="true"></span>
+            <span class="callout__text" id="callout-six"></span>
+          </div>
+
+          <figure class="drink-art" id="drink-art">
+            <div class="drink-art__shadow" aria-hidden="true"></div>
+            <img id="drink-image" src="./assets/drinks/refined-transparent/01-spleen-sour-clean.png" alt="Spleen Sour cocktail" />
+          </figure>
+          <div class="stage-caption"><span>Hover to pause</span><span class="stage-caption__mark">✳</span><span>Use arrows to move</span></div>
+        </div>
+
+      </section>
+
+      <aside class="menu-rail" aria-label="Choose a cocktail">
+        <div class="menu-rail__heading"><span>Choose your mood</span><span>01—09</span></div>
+        <nav class="drink-index" id="drink-index"></nav>
+        <div class="menu-controls">
+          <button class="nav-arrow" id="previous-drink" type="button" aria-label="Previous cocktail"><span>←</span><b>Prev</b></button>
+          <button class="nav-arrow nav-arrow--next" id="next-drink" type="button" aria-label="Next cocktail"><b>Next</b><span>→</span></button>
+        </div>
+      </aside>
+    </main>
+
+    <section class="food-menu" id="food-menu" aria-labelledby="food-menu-title">
+      <div class="food-menu__intro">
+        <p class="section-kicker">From the kitchen / After dark</p>
+        <h2 id="food-menu-title">A table for the beautifully restless.</h2>
+        <p>Small plates and lingering dishes for nights that refuse to end — contemporary interpretations of old-world comforts, served with a little beautiful darkness.</p>
+      </div>
+      <div class="food-menu__list">
+        <div class="food-menu__group">
+          <p class="food-menu__group-label">I / Small plates</p>
+          <article class="food-menu__item">
+            <div><h3>Oysters at Dusk</h3><p>East Coast oysters, absinthe mignonette, smoked apple and winter dill.</p></div><span>$18</span>
+          </article>
+          <article class="food-menu__item">
+            <div><h3>The Parisian Mourning</h3><p>Chicken liver parfait, burnt brioche, black cherry mostarda and fleur de sel.</p></div><span>$16</span>
+          </article>
+          <article class="food-menu__item">
+            <div><h3>Caramelized Endive</h3><p>Belgian endive, roasted pear, walnut, bleu cheese and bitter leaves.</p></div><span>$15</span>
+          </article>
+        </div>
+        <div class="food-menu__group">
+          <p class="food-menu__group-label">II / The late supper</p>
+          <article class="food-menu__item">
+            <div><h3>Baudelaire’s Pigeon</h3><p>Roasted squab, celeriac silk, sour cherry jus and juniper ash.</p></div><span>$32</span>
+          </article>
+          <article class="food-menu__item">
+            <div><h3>The Last Bohemian</h3><p>Dry-aged duck, spiced quince, heirloom carrot and sauce bordelaise.</p></div><span>$34</span>
+          </article>
+          <article class="food-menu__item">
+            <div><h3>Black Tide Risotto</h3><p>Squid ink, mussel, preserved lemon, fennel and a whisper of saffron.</p></div><span>$28</span>
+          </article>
+        </div>
+        <div class="food-menu__group food-menu__group--sweet">
+          <p class="food-menu__group-label">III / A sweet ending</p>
+          <article class="food-menu__item">
+            <div><h3>Spleen au Chocolat</h3><p>Dark chocolate crémeux, chicory coffee, sea salt and cacao nib.</p></div><span>$13</span>
+          </article>
+          <article class="food-menu__item">
+            <div><h3>A Little Death</h3><p>Poached pear, absinthe cream, almond sablé and rose pepper.</p></div><span>$12</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="food-gallery" aria-labelledby="food-gallery-title">
+      <div class="food-gallery__heading">
+        <p class="section-kicker">From the table</p>
+        <h2 id="food-gallery-title">A study in appetite.</h2>
+      </div>
+      <div class="food-gallery__grid">
+        <figure><img src="./assets/img/OystersatDusk.webp" alt="Oysters at Dusk" /><figcaption>Oysters at Dusk</figcaption></figure>
+        <figure><img src="./assets/img/TheParisianMourning.webp" alt="The Parisian Mourning" /><figcaption>The Parisian Mourning</figcaption></figure>
+        <figure><img src="./assets/img/CaramelizedEndive.webp" alt="Caramelized Endive" /><figcaption>Caramelized Endive</figcaption></figure>
+        <figure><img src="./assets/img/BaudelairesPigeon.webp" alt="Baudelaire's Pigeon" /><figcaption>Baudelaire’s Pigeon</figcaption></figure>
+        <figure><img src="./assets/img/TheLastBohemian.webp" alt="The Last Bohemian" /><figcaption>The Last Bohemian</figcaption></figure>
+        <figure><img src="./assets/img/BlackTideRisotto.webp" alt="Black Tide Risotto" /><figcaption>Black Tide Risotto</figcaption></figure>
+      </div>
+    </section>
+
+    <div class="site-sections">
+      <section class="content-section content-section--dark" id="ambiance" aria-labelledby="ambiance-title">
+        <div class="atmosphere-gallery" aria-label="Atmosphere gallery">
+          <img class="atmosphere-gallery__image atmosphere-gallery__image--one" src="./assets/img/atmosphere01.webp" alt="Spleen Town atmosphere" />
+          <img class="atmosphere-gallery__image atmosphere-gallery__image--two" src="./assets/img/atmosphere02.webp" alt="Spleen Town cocktail bar atmosphere" />
+          <img class="atmosphere-gallery__image atmosphere-gallery__image--three" src="./assets/img/atmosphere03.webp" alt="Spleen Town noir lounge atmosphere" />
+        </div>
+        <div class="section-body">
+          <h2 id="ambiance-title">Immersive Noir Experience in Central San Francisco</h2>
+          <h3>The Ultimate Intimate Lounge Atmosphere</h3>
+          <p>Low light, cinematic textures and a soundtrack for wandering turn Spleen Town into an atmospheric stop near Nob Hill, Lower Nob Hill and Union Square.</p>
+        </div>
+      </section>
+      <section class="content-section content-section--split" id="thehouse" aria-labelledby="thehouse-title">
+        <div class="section-body thehouse-copy">
+          <h2 id="thehouse-title">An Atmospheric Speakeasy &amp; Lounge on Leavenworth St</h2>
+          <h3>Fusing 19th Parisian spleen with SF Nightlife</h3>
+          <p>A bohemian noir cocktail experience in Nob Hill, where story-driven mixology inspired by the Accurseds, rare spirits and a shadowy late-night mood meet the energy of SF.</p>
+          <img class="thehouse-side-image" src="./assets/img/thehouse02.webp" alt="Spleen Town bartenders at work" />
+        </div>
+        <div class="thehouse-right-images">
+          <img src="./assets/img/thehouse03.webp" alt="The House candlelit lounge at Spleen Town Noir Cocktail Bar" />
+          <img src="./assets/img/thehouse.webp" alt="The House interior at Spleen Town Noir Cocktail Bar" />
+        </div>
+      </section>
+      <section class="content-section" id="whats-on" aria-labelledby="whats-on-title">
+        <div class="whats-on-fixed-bg" aria-hidden="true"></div>
+        <div class="section-body">
+          <h2 id="whats-on-title"><span>What's on</span><span>San Francisco?</span></h2>
+          <h3>Live music, special performances, and unforgettable nights in Nob Hill</h3>
+          <p>Discover upcoming shows, special events, and the artists bringing our nights to life.</p>
+        </div>
+        <aside class="event-calendar" aria-labelledby="event-calendar-title">
+          <div class="event-calendar__heading"><span id="event-calendar-title">The next few nights</span><span>October 2026</span></div>
+          <article class="event-calendar__event">
+            <time datetime="2026-10-15"><span>15</span><small>THU</small></time>
+            <div><h3>Velvet Hour</h3><p>Live jazz / 8:00 PM</p><span>Low lights, slow standards, no encore promised.</span></div>
+          </article>
+          <article class="event-calendar__event">
+            <time datetime="2026-10-16"><span>16</span><small>FRI</small></time>
+            <div><h3>The Accursed Cabaret</h3><p>Special performance / 9:30 PM</p><span>A night of theatrical songs and beautiful misbehavior.</span></div>
+          </article>
+          <article class="event-calendar__event">
+            <time datetime="2026-10-17"><span>17</span><small>SAT</small></time>
+            <div><h3>Bohemian Afterglow</h3><p>Late-night DJ set / 10:00 PM</p><span>French decadence, tropical rhythm and a crowded dance floor.</span></div>
+          </article>
+          <article class="event-calendar__event">
+            <time datetime="2026-10-18"><span>18</span><small>SUN</small></time>
+            <div><h3>Sunday in Spleen</h3><p>Acoustic salon / 7:30 PM</p><span>An intimate closing note for the beautifully restless.</span></div>
+          </article>
+          <article class="event-calendar__event">
+            <time datetime="2026-10-19"><span>19</span><small>MON</small></time>
+            <div><h3>Monday Mourning</h3><p>Vinyl listening hour / 8:00 PM</p><span>Slow records for the first night of the week.</span></div>
+          </article>
+          <article class="event-calendar__event">
+            <time datetime="2026-10-20"><span>20</span><small>TUE</small></time>
+            <div><h3>Absinthe Salon</h3><p>Spoken word / 8:30 PM</p><span>Poems, green light and a room full of unfinished thoughts.</span></div>
+          </article>
+          <article class="event-calendar__event">
+            <time datetime="2026-10-21"><span>21</span><small>WED</small></time>
+            <div><h3>Night Bloom</h3><p>Live soul / 9:00 PM</p><span>Warm voices blooming after the city goes dark.</span></div>
+          </article>
+          <article class="event-calendar__event">
+            <time datetime="2026-10-22"><span>22</span><small>THU</small></time>
+            <div><h3>Velvet Hour II</h3><p>Live jazz / 8:00 PM</p><span>A second pour of standards, smoke and brass.</span></div>
+          </article>
+          <article class="event-calendar__event">
+            <time datetime="2026-10-23"><span>23</span><small>FRI</small></time>
+            <div><h3>Electric Baudelaire</h3><p>Special performance / 9:30 PM</p><span>Neon cabaret for the romantics and the ruined.</span></div>
+          </article>
+          <article class="event-calendar__event">
+            <time datetime="2026-10-24"><span>24</span><small>SAT</small></time>
+            <div><h3>Night of the Accursed</h3><p>Live band / 10:00 PM</p><span>Our darkest dance floor, dressed in gold.</span></div>
+          </article>
+          <article class="event-calendar__event">
+            <time datetime="2026-10-25"><span>25</span><small>SUN</small></time>
+            <div><h3>Sunday in Spleen II</h3><p>Acoustic salon / 7:30 PM</p><span>A quiet gathering before the week begins again.</span></div>
+          </article>
+          <article class="event-calendar__event">
+            <time datetime="2026-10-26"><span>26</span><small>MON</small></time>
+            <div><h3>After Hours, Before Sleep</h3><p>Ambient set / 8:00 PM</p><span>Hushed electronics and cocktails with long shadows.</span></div>
+          </article>
+          <article class="event-calendar__event">
+            <time datetime="2026-10-27"><span>27</span><small>TUE</small></time>
+            <div><h3>Letters from Paris</h3><p>Literary reading / 8:30 PM</p><span>Fragments of longing, read aloud over candlelight.</span></div>
+          </article>
+          <article class="event-calendar__event">
+            <time datetime="2026-10-28"><span>28</span><small>WED</small></time>
+            <div><h3>Green Room Reverie</h3><p>Live vocalists / 9:00 PM</p><span>A rehearsal that became a beautiful little accident.</span></div>
+          </article>
+          <article class="event-calendar__event">
+            <time datetime="2026-10-29"><span>29</span><small>THU</small></time>
+            <div><h3>Velvet Hour III</h3><p>Live jazz / 8:00 PM</p><span>One more slow standard before the Halloween fever.</span></div>
+          </article>
+          <article class="event-calendar__event">
+            <time datetime="2026-10-30"><span>30</span><small>FRI</small></time>
+            <div><h3>Before the Masks</h3><p>Costume preview / 9:30 PM</p><span>A nocturne of strange guests and stranger songs.</span></div>
+          </article>
+          <article class="event-calendar__event">
+            <time datetime="2026-10-31"><span>31</span><small>SAT</small></time>
+            <div><h3>Halloween in Spleen Town</h3><p>All-night celebration / 10:00 PM</p><span>A beautiful darkness to close the month.</span></div>
+          </article>
+        </aside>
+      </section>
+      <section class="reserve-section" id="reserve" aria-labelledby="reserve-title">
+        <div class="reserve-section__intro">
+          <p class="reserve-section__label">Reservations</p>
+          <h2 id="reserve-title"><span>Reserve a Table</span><span>at Spleen Town</span></h2>
+        </div>
+        <div class="reserve-form-wrap">
+          <form class="reserve-form" action="#reserve" method="get">
+            <label for="party-size">Number of People <em>- Optional</em></label>
+            <select id="party-size" name="party-size">
+              <option value="">Number of People</option>
+              <option value="1">1 person</option>
+              <option value="2">2 people</option>
+              <option value="3">3 people</option>
+              <option value="4">4 people</option>
+              <option value="5">5 people</option>
+              <option value="6">6 people</option>
+              <option value="7-plus">7+ people</option>
+            </select>
+            <label for="reservation-name">Name <em>- Required</em></label>
+            <input id="reservation-name" name="name" type="text" autocomplete="name" placeholder="Name" required />
+            <label for="reservation-date">Date <em>- Required</em></label>
+            <input id="reservation-date" name="date" type="date" required />
+            <label for="reservation-time">Time <em>- Required</em></label>
+            <input id="reservation-time" name="time" type="text" inputmode="numeric" autocomplete="off" placeholder="HH:MM" pattern="[0-2][0-9]:[0-5][0-9]" maxlength="5" required />
+            <button class="reserve-form__button" type="submit">Find a table</button>
+          </form>
+        </div>
+      </section>
+      <section class="content-section content-section--split" id="private-events" aria-labelledby="events-title">
+        <video class="private-events__video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+          <source src="./assets/video/spleen-town-line-art.mp4" type="video/mp4" />
+        </video>
+        <div class="section-body">
+          <h2 id="events-title">Private Events &amp;<br />Celebrations</h2>
+          <h3>Private Lounge Rentals<br />in Nob Hill</h3>
+        </div>
+        <aside class="private-events__copy">
+          <p>Planning a party? We know a thing or two about a good hooley. Whether it’s a dozen friends or a couple of hundred, we’ve the space to suit - for birthdays, work events, anniversaries, and more.</p>
+          <p>Take over the whole venue and have the run of the place.</p>
+          <a class="private-events__button" href="mailto:hello@spleentownbar.com">GET IN TOUCH <span aria-hidden="true">↗</span></a>
+        </aside>
+      </section>
+      <section class="content-section faq-section" id="faq" aria-labelledby="faq-title">
+        <div class="section-body">
+          <h2 id="faq-title"><span>Frequently Asked Questions About</span><span>Spleen Town Noir Cocktail Bar</span></h2>
+          <div class="faq-list">
+            <details><summary><span class="faq-question">Where is Spleen Town located in San Francisco and which neighborhoods are nearby?</span></summary><p>Spleen Town is on Leavenworth St in Nob Hill, near Tenderloin, Lower Nob Hill, Union Square, Russian Hill and hotels in the surrounding area.</p></details>
+            <details><summary><span class="faq-question">Do I need a reservation, or do you accept walk-ins?</span></summary><p>For reservations and walk-in questions, contact Spleen Town via WhatsApp at <a href="https://wa.me/14156731211">+1 (415) 673-1211</a>.</p></details>
+            <details><summary><span class="faq-question">Can I host a private event or rent out the bar for a group in San Francisco?</span></summary><p>Yes. Private cocktail events, tailored celebrations and private lounge rentals can be discussed via WhatsApp at <a href="https://wa.me/14156731211">+1 (415) 673-1211</a>.</p></details>
+            <details><summary><span class="faq-question">What are Spleen Town's opening hours and till what time is the bar open?</span></summary><p>Spleen Town is open daily from 12:00 PM until 02:00 AM.</p></details>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#top" aria-label="Spleen Town home">
+        <span class="cat-mark cat-mark--footer" aria-hidden="true">
+          <img src="./assets/img/Vintage%20Collage%20Cat%20with%20Wilted%20Flower.png" alt="" />
+          <span class="cat-mark__eye cat-mark__eye--left"></span>
+          <span class="cat-mark__eye cat-mark__eye--right"></span>
+        </span>
+        <span class="wordmark__name">Spleen <em>Town</em><small>Noir Cocktail Bar</small></span>
+      </a>
+      <div class="footer-details">
+        <p class="footer-details__motto"><span>Where two tracks cross, the night takes a turn.</span><span>A little mystery. A little melancholy. A very good cocktail.</span></p>
+        <p class="footer-details__hours">Mon–Sun: 12:00 PM – 02:00 AM</p>
+      </div>
+      <div class="footer-actions">
+        <nav class="footer-socials" aria-label="Social media">
+          <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="social-fill"/></svg></a>
+          <a href="https://www.youtube.com/" aria-label="YouTube" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8.2a2.5 2.5 0 0 0-1.8-1.8C17.6 6 12 6 12 6s-5.6 0-7.2.4A2.5 2.5 0 0 0 3 8.2 26 26 0 0 0 2.6 12 26 26 0 0 0 3 15.8a2.5 2.5 0 0 0 1.8 1.8C6.4 18 12 18 12 18s5.6 0 7.2-.4a2.5 2.5 0 0 0 1.8-1.8 26 26 0 0 0 .4-3.8 26 26 0 0 0-.4-3.8Z"/><path class="social-fill" d="m10 9 5 3-5 3V9Z"/></svg></a>
+          <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-8h3l.5-3H14V8.2c0-.9.3-1.5 1.6-1.5H18V4.1c-.4-.1-1.4-.1-2.5-.1C12.9 4 11 5.6 11 8.5V10H8v3h3v8h3Z"/></svg></a>
+          <a href="https://www.tiktok.com/" aria-label="TikTok" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4c.3 2 1.4 3.2 3.5 3.3v3.1a8 8 0 0 1-3.5-1v5.7a5 5 0 1 1-4.3-5v3.2a1.9 1.9 0 1 0 1.2 1.8V4H15Z"/></svg></a>
+          <a href="https://x.com/" aria-label="X" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h4.4l3.5 4.8L15.8 4H20l-6.2 7.2L20.5 20h-4.4l-4-5.3L7.3 20H3.2l6.5-7.7L4 4Zm3.1 1.7 9.8 12.6h.6L7.7 5.7h-.6Z"/></svg></a>
+        </nav>
+      </div>
+      <a class="vinsancor-button" href="https://vinsancor.com" target="_blank" rel="noreferrer"><span class="vinsancor-button__prefix">Desenvolvido por</span> <strong>Vinsancor</strong></a>
+    </footer>
+
+    <div class="sr-live" id="live-region" role="status" aria-live="polite"></div>
+    <script src="./script.js?v=20261014-access-keyhole" defer></script>
+  </body>
+</html>
